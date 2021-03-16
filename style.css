@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #181719;
+    color: white;
+}
+
+header {
+    display: block;
+    border-color: orange;
+}
+
+.logo {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+.navbar__list {
+    list-style: none;
+}
+
+.navbar__list-item {
+    display: inline-block;
+}
+
+.navbar__list-item a {
+    color: white;
+}

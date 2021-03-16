@@ -1,0 +1,14 @@
+
+
+-header
+    -- img .logo (THE INTERIOR)
+    -- nav 
+        --- 6*li (Home, Collection, About, Contact)
+-main
+    -- main--text 
+        -- main__text__title
+        -- main__text__description
+        -- main__text__readmore
+    -- main--img 
+
+-footer
