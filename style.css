@@ -1,6 +1,4 @@
-/* =====
-global styles
-=====*/
+/* ===== global styles =====*/
 
 body {
     margin: 0;
@@ -9,26 +7,38 @@ body {
     color: white;
 }
 
+body * {
+  box-sizing: border-box;
+  color: white;
+}
 
-/* =====
-header
-=====*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== NAVBAR=====*/
 
 header {
     display: block;
     background-color: orange;
-    padding-top: 40px;
-    padding-left: 80px;
-    padding-bottom: 40px;
 }
-
-
 
 header::after {
     content: '';
     display: table;
     clear: both;
   }
+
+
+
 
 .logo {
     float: left;
@@ -40,27 +50,83 @@ header::after {
     cursor: pointer;
 }
 
-nav {
-    float: right;
+.fa-bars {
+  float: right;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav-list-item {
+  list-style-type: none;
+}
+
+.nav-list-item a {
+  font-size: 21px;
+  text-decoration: none;
+  font-family: 'Montserrat';
+}
+
+.nav-list-item-active {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .menu-icon {
+    font-size: 28px;
+  }
+  header {
+    padding-top: 19px;
+    padding-left: 12px;
+    padding-right: 12.5px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fa-window-close {
+    position: absolute;
+    top: 7.9px;
+    right: 7.9px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  html, body {
+    height: 100%;
+  }
+  .nav-list-item {
+    text-align: center;
+    padding: 15px;
+  }
+  .header-active {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 601px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
 }
 
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
-nav li {
-    display: inline-block;
-}
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-size: 18px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* =====
@@ -81,38 +147,27 @@ text part
 }
 
 
-@media screen and (max-width: 600px) {
-    
-}
-
-@media screen and (max-width: 1200px) and (min-width: 601px) {
-    
-}
-
-@media screen and (min-width: 1200px) {
-    
-}
-
-
 /* =====
 image part
 =====*/
 
 .main--img {
-    
+
 }
+
+/* =====
+make it responsive
+=====*/
 
 
 @media screen and (max-width: 600px) {
-    
+
 }
 
 @media screen and (max-width: 1200px) and (min-width: 601px) {
-    
+
 }
 
 @media screen and (min-width: 1200px) {
-    
+
 }
-
-
