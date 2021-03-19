@@ -54,10 +54,6 @@ header::after {
   float: right;
 }
 
-.hidden {
-  display: none;
-}
-
 .nav-list-item {
   list-style-type: none;
 }
@@ -75,12 +71,16 @@ header::after {
 @media screen and (max-width: 600px) {
   .menu-icon {
     font-size: 28px;
+    cursor: pointer;
   }
   header {
     padding-top: 19px;
     padding-left: 12px;
     padding-right: 12.5px;
     padding-bottom: 10px;
+  }
+  .header-active-nav {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,7 +113,9 @@ header::after {
 }
 
 
-
+.hidden {
+  display: none !important;
+}
 
 
 
