@@ -5,7 +5,8 @@ let switchNavbarVisibility=()=> {
     let logo = document.getElementById("logo");
     let menuIcon = document.getElementById("menuIcon");
     let header = document.getElementById("header");
-
+    let main = document.getElementById("main");
+    let footer = document.getElementById("footer");
     if(isNavbarActive === false) {
         // step 2 - hide logo and menu icon
         logo.classList.add("hidden");
@@ -15,6 +16,9 @@ let switchNavbarVisibility=()=> {
         closeIcon.classList.remove("hidden");
         navbar.classList.remove("hidden");
         header.classList.add("header-active-nav");
+
+        main.classList.add("hidden");
+        footer.classList.add("hidden");
     }
     else {
                 // step 2 - show logo and menu icon
@@ -24,6 +28,9 @@ let switchNavbarVisibility=()=> {
                 closeIcon.classList.add("hidden");
                 navbar.classList.add("hidden");
                 header.classList.remove("header-active-nav");
+
+                main.classList.remove("hidden");
+                footer.classList.remove("hidden");
     }
     isNavbarActive= !isNavbarActive;
 }
