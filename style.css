@@ -68,6 +68,11 @@ header::after {
   font-weight: bold;
 }
 
+.nav-list-item-active a {
+  padding-bottom: 8px;
+  border-bottom: 2px solid white;
+}
+
 @media screen and (max-width: 600px) {
   .menu-icon {
     font-size: 28px;
@@ -87,9 +92,9 @@ header::after {
   }
   .fa-window-close {
     position: absolute;
-    top: 7.9px;
-    right: 7.9px;
-    font-size: 30px;
+    top: 13.9px;
+    right: 9.9px;
+    font-size: 31px;
     cursor: pointer;
   }
   html, body {
