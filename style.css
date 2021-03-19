@@ -90,7 +90,8 @@ header::after {
     justify-content: center;
     align-items: center;
   }
-  .fa-window-close {
+  .close-icon {
+    font-weight: lighter;
     position: absolute;
     top: 13.9px;
     right: 9.9px;
