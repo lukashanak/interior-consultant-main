@@ -92,6 +92,9 @@ header::after {
     justify-content: center;
     align-items: center;
   }
+  .header-active-nav ul {
+    padding-left: 0px;
+  }
   .close-icon {
     font-weight: lighter;
     position: absolute;
@@ -156,6 +159,9 @@ text part
     font-family: 'Montserrat', sans-serif;
     width: 250px;
   }
+  .readmore {
+    margin-bottom: 22px;
+  }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 601px) {
@@ -165,22 +171,90 @@ text part
 @media screen and (min-width: 1200px) {
 
 }
+
+
+
+
+
 
 /* =====
 image part
 =====*/
 
-.main--img {
-
+.card {
+  
 }
 
-/* =====
-make it responsive
-=====*/
+.avatar-photo {
+  border-radius: 50%;
+}
 
+.card {
+    padding-bottom: 25px;
+    background-color: #181719;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+}
+
+.avatar-photo, .avatar-info {
+  display: inline-block;
+}
+
+.avatar-info {
+  position: absolute;
+  top: 30px;
+  width: 150px;
+}
+
+.avatar-info p {
+  margin: 0px;
+  margin-bottom: 5.85px;
+}
+
+
+.name, .job-title {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.job-title {
+  color: #828282;
+}
+
+.designed-by {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+}
 
 @media screen and (max-width: 600px) {
-
+  .main--img {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .main-photo {
+    max-width: 100%;
+  }
+  .card {
+    width: 300px;
+    height: 138px;
+    padding-top: 15px;
+    padding-left: 19px;
+    top: 536px;
+    right: 23px;
+  }
+  .avatar-photo {
+    width: 62px;
+    margin-right: 20px;
+  }
+  .name {
+    font-size: 14px;
+  }
+  .job-title {
+    font-size: 12px;
+  }
+  .designed-by {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 601px) {
@@ -189,4 +263,30 @@ make it responsive
 
 @media screen and (min-width: 1200px) {
 
+}
+
+
+/* =====
+footer
+=====*/
+
+
+footer { 
+  display: block;
+  width: 100%;
+  position: fixed;
+  bottom: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-style: 'Montserrat';
+  font-weight: 700;
+  color: #BDBDBD;
+}
+
+footer p {
+  color: #A9A9A9;
+}
+
+footer a {
+  color: #BDBDBD;
 }
