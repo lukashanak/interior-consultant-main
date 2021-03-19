@@ -24,11 +24,10 @@ body * {
 
 
 
-/* ===== NAVBAR=====*/
+/* ===== HEADER AND NAVBAR=====*/
 
 header {
     display: block;
-   /* background-color: orange; */
 }
 
 header::after {
@@ -69,6 +68,10 @@ header::after {
   padding-bottom: 8px;
   border-bottom: 2px solid white;
   font-weight: bold;
+}
+
+.hidden {
+  display: none !important;
 }
 
 @media screen and (max-width: 600px) {
@@ -118,41 +121,50 @@ header::after {
 }
 
 
-.hidden {
-  display: none !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* =====
-main
-=====*/
-
-main {
-    display: block;
-}
-
 
 /* =====
 text part
 =====*/
 
-.main--text {
+.readmore-text, .readmore-icon {
+  display: inline-block;
+}
+
+.readmore-text {
+  margin-right: 15px;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+}
+
+.readmore-icon {
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+  .main--text {
+    margin-left: 12px;
+  }
+  .title {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'Lora', serif;
+  }
+  .description {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'Montserrat', sans-serif;
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 601px) {
 
 }
 
+@media screen and (min-width: 1200px) {
+
+}
 
 /* =====
 image part
