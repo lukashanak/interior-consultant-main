@@ -28,7 +28,7 @@ body * {
 
 header {
     display: block;
-    background-color: orange;
+   /* background-color: orange; */
 }
 
 header::after {
@@ -62,21 +62,20 @@ header::after {
   font-size: 21px;
   text-decoration: none;
   font-family: 'Montserrat';
-}
-
-.nav-list-item-active {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .nav-list-item-active a {
   padding-bottom: 8px;
   border-bottom: 2px solid white;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
   .menu-icon {
-    font-size: 28px;
+    font-size: 29px;
     cursor: pointer;
+    margin-top: 3px;
   }
   header {
     padding-top: 19px;
@@ -93,9 +92,9 @@ header::after {
   .close-icon {
     font-weight: lighter;
     position: absolute;
-    top: 13.9px;
+    top: 18.9px;
     right: 9.9px;
-    font-size: 31px;
+    font-size: 34px;
     cursor: pointer;
   }
   html, body {
