@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #181719;
     color: white;
+    font-size: 100%;
 }
 
 *,
@@ -63,7 +64,7 @@ header::after {
   font-weight: bold;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .menu-icon {
     font-size: 29px;
     cursor: pointer;
@@ -104,53 +105,14 @@ header::after {
   }
 }
 
-@media screen and (min-width: 601px) and (max-width: 1200px)  {
+@media screen and (min-width: 701px)  {
   header {
-    background-color: red;
+    padding-left:77px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .menu-icon {
-    font-size: 29px;
-    cursor: pointer;
-    margin-top: 3px;
-  }
-  header {
-    padding-top: 19px;
-    padding-left: 12px;
-    padding-right: 12.5px;
-    padding-bottom: 10px;
-  }
-  .header-active-nav {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .header-active-nav ul {
-    padding-left: 0px;
-  }
-  .close-icon {
-    font-weight: lighter;
-    position: absolute;
-    top: 18.9px;
-    right: 9.9px;
-    font-size: 34px;
-    cursor: pointer;
-  }
-  html, body {
-    height: 100%;
-  }
-  .nav-list-item {
-    text-align: center;
-    padding: 15px;
-  }
-  .header-active {
-    height: 100%;
-  }
-}
-
-@media screen and (min-width: 1201px) {
-  header {
-    background-color: blue;
+    display: none !important;
   }
 }
 
@@ -175,7 +137,7 @@ text part
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .main--text {
     margin-left: 12px;
   }
@@ -195,8 +157,10 @@ text part
   }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 601px) {
-
+@media screen and (min-width: 701px) and (max-width: 1200px)  {
+  .main--text { 
+    padding-left: 77px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
