@@ -6,7 +6,11 @@ body {
     background-color: #181719;
     color: white;
     font-size: 100%;
+    height: 100%;
 }
+
+
+
 
 *,
 *::before,
@@ -64,6 +68,11 @@ header::after {
   font-weight: bold;
 }
 
+header {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 @media screen and (max-width: 700px) {
   .menu-icon {
     font-size: 29px;
@@ -72,8 +81,6 @@ header::after {
   }
   header {
     padding-top: 19px;
-    padding-left: 12px;
-    padding-right: 12.5px;
     padding-bottom: 10px;
   }
   .header-active-nav {
@@ -107,15 +114,33 @@ header::after {
 
 @media screen and (min-width: 701px)  {
   header {
-    padding-left:77px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    margin-bottom: 50px;
   }
   .menu-icon {
     display: none !important;
   }
 }
 
+@media screen and (min-width: 1201px)  {
+  header {
+    padding-top: 46px;
+    margin-bottom: 150px;
+  }
+  .menu-icon {
+    display: none !important;
+  }
+}
+
+
+
+
+/* layout */
+main {
+  margin-left: 5%;
+  margin-right: 5%;
+  position: relative;
+}
 
 
 /* =====
@@ -127,20 +152,14 @@ text part
 }
 
 .readmore-text {
-  margin-right: 15px;
+  margin-right: 6px;
   font-family: 'Lora', serif;
   font-weight: 700;
-}
-
-.readmore-icon {
   cursor: pointer;
 }
 
 
 @media screen and (max-width: 700px) {
-  .main--text {
-    margin-left: 12px;
-  }
   .title {
     font-size: 36px;
     font-weight: 500;
@@ -158,13 +177,18 @@ text part
 }
 
 @media screen and (min-width: 701px) and (max-width: 1200px)  {
-  .main--text { 
-    padding-left: 77px;
+  .main--text {
+    margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-
+@media screen and (min-width: 1201px) {
+  .main--text {
+    width: 35%;
+    display: inline-block;
+    position: absolute;
+    top: 0px !important;
+  }
 }
 
 
@@ -176,23 +200,50 @@ text part
 image part
 =====*/
 
-.card {
-  
-}
-
-.avatar-photo {
-  border-radius: 50%;
+.big-photo {
+  max-width: 100%;
+  position: relative;
 }
 
 .card {
-    padding-bottom: 25px;
-    background-color: #181719;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: absolute;
+  padding: 5%;
+  padding-bottom: 25px;
+  background-color: #181719;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
 }
+
+@media screen and (max-width: 400px) { 
+  .card {
+    right: unset;
+  }
+}
+
+@media screen and (max-width: 1200px) { 
+  .card {
+    max-width: 300px;
+    height: 138px;
+    bottom: -82px;
+    right: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    bottom: -102px;
+    right: 40px;
+  }
+}
+
 
 .avatar-photo, .avatar-info {
   display: inline-block;
+}
+
+.avatar-photo {
+  width: 62px;
+  margin-right: 20px;
+  border-radius: 50%;
 }
 
 .avatar-info {
@@ -221,26 +272,7 @@ image part
   font-weight: 700;
 }
 
-@media screen and (max-width: 600px) {
-  .main--img {
-    margin-left: 12px;
-    margin-right: 12px;
-  }
-  .main-photo {
-    max-width: 100%;
-  }
-  .card {
-    width: 300px;
-    height: 138px;
-    padding-top: 15px;
-    padding-left: 19px;
-    top: 536px;
-    right: 23px;
-  }
-  .avatar-photo {
-    width: 62px;
-    margin-right: 20px;
-  }
+@media screen and (max-width: 1200px) {
   .name {
     font-size: 14px;
   }
@@ -252,12 +284,14 @@ image part
   }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 601px) {
-
-}
-
 @media screen and (min-width: 1200px) {
-
+  .main--img {
+    width: 59%;
+    margin-left: 5%;
+    display: inline-block;
+    position: absolute;
+    right: 0
+  }
 }
 
 
@@ -265,12 +299,17 @@ image part
 footer
 =====*/
 
+.content-wrap {
+  padding-bottom: 400px;
+}
 
-footer { 
+footer {
   display: block;
   width: 100%;
-  position: fixed;
-  bottom: 5px;
+  position: absolute;
+  bottom: 0;
+
+
   text-align: center;
   font-size: 14px;
   font-style: 'Montserrat';
