@@ -1,14 +1,17 @@
 /* ===== global styles =====*/
 
+html {
+  position: relative;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: #181719;
     color: white;
     font-size: 100%;
-    height: 100%;
+    margin-bottom: 170px; 
 }
-
 
 *,
 *::before,
@@ -313,29 +316,11 @@ image part
 footer
 =====*/
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  margin-bottom: 170px;
-}
-.footer {
-  width: 100%;
-  height: 150px;
-  background: #3167b1;
-  position: absolute;
-  bottom: 0px; left: 0;
-}
-
-
-
 footer {
   display: block;
   width: 100%;
   position: absolute;
   bottom: 0px;
-
 
   text-align: center;
   font-size: 14px;
