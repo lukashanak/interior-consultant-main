@@ -10,8 +10,6 @@ body {
 }
 
 
-
-
 *,
 *::before,
 *::after {
@@ -147,8 +145,13 @@ main {
 text part
 =====*/
 
-.readmore-text, .readmore-icon {
-  display: inline-block;
+.title {
+  font-weight: 500;
+  font-family: 'Lora', serif;
+}
+
+.description {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .readmore-text {
@@ -158,20 +161,21 @@ text part
   cursor: pointer;
 }
 
+.readmore-text, .readmore-icon {
+  display: inline-block;
+}
+
+
 
 @media screen and (max-width: 700px) {
   .title {
     font-size: 36px;
-    font-weight: 500;
-    font-family: 'Lora', serif;
   }
   .description {
     font-size: 14px;
-    line-height: 17px;
-    font-family: 'Montserrat', sans-serif;
-    width: 250px;
   }
   .readmore {
+    font-size: 14px;
     margin-bottom: 22px;
   }
 }
@@ -189,6 +193,15 @@ text part
     position: absolute;
     top: 0px !important;
   }
+  .title {
+    font-size: 48px;
+  }
+  .description {
+    font-size: 24px;
+  }
+  .readmore {
+    font-size: 18px;
+  }
 }
 
 
@@ -202,7 +215,6 @@ image part
 
 .big-photo {
   max-width: 100%;
-  position: relative;
 }
 
 .card {
@@ -300,14 +312,18 @@ footer
 =====*/
 
 .content-wrap {
-  padding-bottom: 400px;
+  padding-bottom: 200px;
+}
+
+.page-container {
+  padding-bottom: 50px;
 }
 
 footer {
   display: block;
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
 
 
   text-align: center;
