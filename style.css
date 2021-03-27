@@ -1,23 +1,24 @@
 /* ===== global styles =====*/
 
 html {
-  min-height: 100%;
   position: relative;
+  min-height: 100%;
   padding-bottom: 300px; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #181719;
+  color: white;
+  font-size: 100%;
+  min-height: 100%;
 }
 
 @media screen and (max-width: 600px) and (max-height: 800px){
   html { 
   padding-bottom: 700px;
 }
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #181719;
-    color: white;
-    font-size: 100%;
 }
 
 *,
@@ -130,6 +131,7 @@ header {
   .menu-icon {
     display: none !important;
   }
+  
 }
 
 @media screen and (min-width: 1201px)  {
@@ -155,6 +157,7 @@ main {
 /* =====
 text part
 =====*/
+
 
 .title {
   margin-top: 0px;
@@ -212,20 +215,20 @@ text part
 
 @media screen and (min-width: 1201px) {
   .main--text {
-    width: 35%;
     display: inline-block;
+    width: 35%;
     position: absolute;
-    top: 0px !important;
+    top: 120px !important;
   }
   .title {
     /* font-size: 48px; */
     font-size: 3em;
   }
   .description {
-    font-size: 24px;
+    font-size: 1.5em;
   }
   .readmore {
-    font-size: 18px;
+    font-size: 1.125em;
   }
 }
 
@@ -312,13 +315,13 @@ image part
 
 @media screen and (max-width: 1200px) {
   .name {
-    font-size: 14px;
+    font-size: 0.875em;
   }
   .job-title {
-    font-size: 12px;
+    font-size: 0.75em;
   }
   .designed-by {
-    font-size: 24px;
+    font-size: 1.5em;
   }
 }
 
@@ -344,7 +347,7 @@ footer {
   bottom: 0px;
 
   text-align: center;
-  font-size: 14px;
+  font-size: 0.875em;
   font-style: 'Montserrat';
   font-weight: 700;
   color: #BDBDBD;
