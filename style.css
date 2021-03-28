@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  min-height: 100%;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
@@ -46,16 +46,13 @@ body {
 
 /* ===== HEADER AND NAVBAR=====*/
 
-.height-100-percents {
-  height: 100%;
-}
 
-.hidden {
-  display: none !important;
-}
+/* part 1 - values which are the same for every devices (mobile, tablets, desktops) */
 
 header {
     display: block;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 header::after {
@@ -74,81 +71,102 @@ header::after {
     cursor: pointer;
 }
 
-.fa-bars {
-  float: right;
-}
-
-.nav-list-item {
+.list-item {
   list-style-type: none;
-}
-
-.nav-list-item a {
-  font-size: 21px;
-  text-decoration: none;
   font-family: 'Montserrat';
   font-weight: 500;
+  font-size: 21px;
 }
 
-.nav-list-item-active a {
+.list-item a {
+  text-decoration: none;
   padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.list-item-active a {
   border-bottom: 2px solid white;
   font-weight: bold;
 }
 
-header {
-  padding-left: 5%;
-  padding-right: 5%;
+
+
+
+
+/* part 2 - values for the phones and smaller tablets */
+
+/* classes which are declared only for the phones and smaller tablets */
+
+.height-100-percents {
+  height: 100%
+}
+
+.menu-icon {
+  float: right;
+  font-size: 29px;
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+.close-icon {
+  font-weight: lighter;
+  position: absolute;
+  top: 18.9px;
+  right: 29.9px;
+  font-size: 34px;
+  cursor: pointer;
+}
+
+
+/* classes who are already declared, but needs to have different values on phones */
+
+
+.wraper-active {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100%;
 }
 
 @media screen and (max-width: 700px) {
-  .menu-icon {
-    font-size: 29px;
-    cursor: pointer;
-    margin-top: 3px;
-  }
   header {
     padding-top: 19px;
     padding-bottom: 10px;
   }
-  .header-active-nav {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .header-active-nav ul {
-    padding-left: 0px;
-  }
-  .close-icon {
-    font-weight: lighter;
-    position: absolute;
-    top: 18.9px;
-    right: 9.9px;
-    font-size: 34px;
-    cursor: pointer;
-  }
-  html, body {
-    height: 100%;
-  }
-  .nav-list-item {
+  .list-item {
     text-align: center;
     padding: 15px;
   }
-  .header-active {
-    height: 100%;
+  .element--hidden {
+    display: none !important;
   }
 }
+
+/* part 3 - values for the bigger tablets  */
+
+/* 3.1 -  hide items which should not be displayd on tablets / pcs */
+
+@media screen and (min-width: 701px)  {
+  .menu-icon, .close-icon {
+    display: none !important;
+  }
+}
+
+/* 3.2 - other things */
 
 @media screen and (min-width: 701px)  {
   header {
     padding-top: 30px;
     margin-bottom: 50px;
   }
-  .menu-icon {
-    display: none !important;
+  .menu-items {
+
   }
 
 }
+
+/* part 4 - values for desktops */
+
 
 @media screen and (min-width: 1201px)  {
   header {
@@ -159,6 +177,8 @@ header {
     display: none !important;
   }
 }
+
+
 
 
 

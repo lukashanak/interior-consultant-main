@@ -1,50 +1,52 @@
-let isNavbarActive = false;
-let switchNavbarVisibility=()=> {
-    let closeIcon = document.getElementById("closeIcon");
-    let navbar = document.getElementById("navbar");
-    let logo = document.getElementById("logo");
-    let menuIcon = document.getElementById("menuIcon");
-    let header = document.getElementById("header");
-    let main = document.getElementById("main");
-    let footer = document.getElementById("footer");
-    let wraper = document.getElementById("wraper");
-    if(isNavbarActive === false) {
-        // step 2 - hide logo and menu icon
-        logo.classList.add("hidden");
-        menuIcon.classList.add("hidden");
-        console.log(menuIcon.classList);
-        // step 1 - show navbar and close icon and add ctive class to the header
-        closeIcon.classList.remove("hidden");
-        navbar.classList.remove("hidden");
-        header.classList.add("header-active-nav");
-        main.classList.add("hidden");
-        footer.classList.add("hidden");
-        wraper.classList.add("height-100-percents")
-    }
-    else {
-                // step 2 - show logo and menu icon
-                logo.classList.remove("hidden");
-                menuIcon.classList.remove("hidden");
-                // step 1 - hide navbar and close icon and remove ctive class to the header
-                closeIcon.classList.add("hidden");
-                navbar.classList.add("hidden");
-                header.classList.remove("header-active-nav");
 
-                main.classList.remove("hidden");
-                footer.classList.remove("hidden");
-    }
-    isNavbarActive= !isNavbarActive;
+let body = document.getElementById("body");
+let wraper = document.getElementById("wraper");
+
+let logo = document.getElementById("logo");
+let collapsedMenuIcon = document.getElementById("collapsedMenuIcon");
+let closeIcon = document.getElementById("closeIcon");
+
+let menuItems = document.getElementById("menuItems");
+
+let main = document.getElementById("main");
+let footer = document.getElementById("footer");
+
+function collapseMenu() {
+    // step 1 - hide logo and menuIcon
+      logo.classList.add("element--hidden");
+      menuIcon.classList.add("element--hidden");
+      main.classList.add("element--hidden");
+      footer.classList.add("element--hidden");
+    // step 2 - add class of .height-100-percents to wraper
+      wraper.classList.add("wraper-active");
+
+
+      closeIcon.classList.remove("element--hidden");
+      menuItems.classList.remove("element--hidden");
+}
+
+function hideMenu() {
+  logo.classList.remove("element--hidden");
+  menuIcon.classList.remove("element--hidden");
+  main.classList.remove("element--hidden");
+  footer.classList.remove("element--hidden");
+
+  wraper.classList.remove("height-100-percents");
+
+  closeIcon.classList.add("element--hidden");
+
+  menuItems.classList.add("element--hidden");
+
+  wraper.classList.remove("wraper-active");
 }
 
 
-
-
-document.getElementById('menuIcon').addEventListener("click",
+menuIcon.addEventListener("click",
 function(){
-    switchNavbarVisibility();
+    collapseMenu();
 })
 
-document.getElementById('closeIcon').addEventListener("click",
+closeIcon.addEventListener("click",
 function(){
-    switchNavbarVisibility();
+    hideMenu();
 })
