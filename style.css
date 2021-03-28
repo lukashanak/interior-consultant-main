@@ -96,11 +96,6 @@ header::after {
 /* part 2 - values for the phones and smaller tablets */
 
 /* classes which are declared only for the phones and smaller tablets */
-
-.height-100-percents {
-  height: 100%
-}
-
 .menu-icon {
   float: right;
   font-size: 29px;
