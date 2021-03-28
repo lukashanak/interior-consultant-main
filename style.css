@@ -31,11 +31,11 @@ TABLE OF CONTENT:
    .element--hidden {
      display: none !important;
    }
-   .wraper-active {
+   .wraper--active-menu {
+    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100%;
     padding-bottom: 0;
    }
  }
@@ -62,14 +62,14 @@ body {
   color: white;
 }
 
-.wraper {
-  padding-bottom: 100px;
-}
-
 main {
   margin-left: 5%;
   margin-right: 5%;
   position: relative;
+}
+
+.wraper {
+  padding-bottom: 100px;
 }
 
 @media screen and (min-width: 1700px) {
@@ -308,11 +308,9 @@ header::after {
   margin-bottom: 5.85px;
 }
 
-
 .name, .job-title {
   font-family: 'Montserrat', sans-serif;
 }
-
 
 .job-title {
   color: #828282;

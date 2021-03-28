@@ -22,7 +22,7 @@ function showMenu() {
       main.classList.add("element--hidden");
       footer.classList.add("element--hidden");
       // 3. step - add class .wraper-active to the wraper
-      wraper.classList.add("wraper-active");
+      wraper.classList.add("wraper--active-menu");
       // 4. step - show closeIcon and menuItems
       closeIcon.classList.remove("element--hidden");
       menuItems.classList.remove("element--hidden");
@@ -36,7 +36,7 @@ function hideMenu() {
   main.classList.remove("element--hidden");
   footer.classList.remove("element--hidden");
   // 3. step - remove class .wraper-active to the wraper
-  wraper.classList.remove("wraper-active");
+  wraper.classList.remove("wraper--active-menu");
   // 4. step - hide closeIcon and menuItems
   closeIcon.classList.add("element--hidden");
   menuItems.classList.add("element--hidden");
