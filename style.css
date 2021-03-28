@@ -9,18 +9,25 @@ body {
 
   display: flex;
   flex-direction: column;
-}
 
-
-body {
   margin: 0;
   padding: 0;
   background-color: #181719;
   color: white;
 }
 
+.wraper {
+  padding-bottom: 100px;
+}
+
+@media screen and (min-width: 1700px) {
+  .wraper {
+    padding-bottom: 900px;
+  }
+}
+
 * {
-  box-sizing: border-box;
+/*  box-sizing: border-box; */
   color: white;
 }
 
@@ -128,7 +135,7 @@ header {
   .menu-icon {
     display: none !important;
   }
-  
+
 }
 
 @media screen and (min-width: 1201px)  {
@@ -251,13 +258,13 @@ image part
   position: absolute;
 }
 
-@media screen and (max-width: 400px) { 
+@media screen and (max-width: 400px) {
   .card {
     right: unset;
   }
 }
 
-@media screen and (max-width: 1200px) { 
+@media screen and (max-width: 1200px) {
   .card {
     max-width: 300px;
     height: 138px;
