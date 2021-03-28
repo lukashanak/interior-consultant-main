@@ -81,7 +81,6 @@ header::after {
 .list-item a {
   text-decoration: none;
   padding-bottom: 8px;
-  padding-top: 8px;
 }
 
 .list-item-active a {
