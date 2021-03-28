@@ -32,15 +32,27 @@ body {
 }
 
 
-.hidden {
-  display: none !important;
-}
+
+
+
+
+
+
+
 
 
 
 
 
 /* ===== HEADER AND NAVBAR=====*/
+
+.height-100-percents {
+  height: 100%;
+}
+
+.hidden {
+  display: none !important;
+}
 
 header {
     display: block;
@@ -50,7 +62,7 @@ header::after {
     content: '';
     display: table;
     clear: both;
-  }
+}
 
 .logo {
     float: left;
@@ -147,6 +159,16 @@ header {
     display: none !important;
   }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -7,6 +7,7 @@ let switchNavbarVisibility=()=> {
     let header = document.getElementById("header");
     let main = document.getElementById("main");
     let footer = document.getElementById("footer");
+    let wraper = document.getElementById("wraper");
     if(isNavbarActive === false) {
         // step 2 - hide logo and menu icon
         logo.classList.add("hidden");
@@ -16,9 +17,9 @@ let switchNavbarVisibility=()=> {
         closeIcon.classList.remove("hidden");
         navbar.classList.remove("hidden");
         header.classList.add("header-active-nav");
-
         main.classList.add("hidden");
         footer.classList.add("hidden");
+        wraper.classList.add("height-100-percents")
     }
     else {
                 // step 2 - show logo and menu icon
@@ -38,12 +39,12 @@ let switchNavbarVisibility=()=> {
 
 
 
-document.getElementById('menuIcon').addEventListener("click", 
+document.getElementById('menuIcon').addEventListener("click",
 function(){
     switchNavbarVisibility();
 })
 
-document.getElementById('closeIcon').addEventListener("click", 
+document.getElementById('closeIcon').addEventListener("click",
 function(){
     switchNavbarVisibility();
 })
