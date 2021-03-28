@@ -26,23 +26,19 @@ TABLE OF CONTENT:
 0. CLASSES USED FOR JS (for navbar on mobile devices)
  =====*/
 
- /* 1.3 media queries for small devices */
+ /* 0.1 media queries for small devices */
  @media screen and (max-width: 700px) {
    .element--hidden {
      display: none !important;
-   }
-   .padding-bottom-0 {
-     padding-bottom: 0 !important;
    }
    .wraper-active {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100%;
+    padding-bottom: 0;
    }
  }
-
- /* + there is one class in 1.3 called element-hidden */
 
 /* =====
 0. HTML, BODY, WRAPER, MAIN
@@ -96,6 +92,10 @@ header::after {
     content: '';
     display: table;
     clear: both;
+}
+
+.menu-ul {
+  padding: 0;
 }
 
 .logo {
