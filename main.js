@@ -32,12 +32,12 @@ function hideMenu() {
   footer.classList.remove("element--hidden");
 
   wraper.classList.remove("height-100-percents");
-
   closeIcon.classList.add("element--hidden");
 
   menuItems.classList.add("element--hidden");
 
   wraper.classList.remove("wraper-active");
+
 }
 
 
