@@ -1,4 +1,52 @@
-/* ===== global styles =====*/
+/**************************
+TABLE OF CONTENT:
+-1. CLASSES USED FOR JS
+0. HTML, BODY, WRAPER, MAIN
+1. HEADER
+  1.1 global classes
+  1.2 classes for small devices only
+  1.3 media queries for small devices
+  1.4 media queries for medium devices
+  1.5 media queries for large devices
+2. MAIN--TEXT
+  2.1 global classes
+  2.2 media queries for small devices
+  2.3 media queries for medium devices
+  2.4 media queries for large devices
+3. MAIN--IMG
+  3.1 global classes
+  3.2 media queries for small devices
+  3.3 media queries for small and medium devices
+  3.4 media queries for large devices
+4. FOOTER
+
+
+
+/* =====
+0. CLASSES USED FOR JS (for navbar on mobile devices)
+ =====*/
+
+ /* 1.3 media queries for small devices */
+ @media screen and (max-width: 700px) {
+   .element--hidden {
+     display: none !important;
+   }
+   .padding-bottom-0 {
+     padding-bottom: 0 !important;
+   }
+   .wraper-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+   }
+ }
+
+ /* + there is one class in 1.3 called element-hidden */
+
+/* =====
+0. HTML, BODY, WRAPER, MAIN
+ =====*/
 
 html {
   height: 100%;
@@ -6,18 +54,26 @@ html {
 
 body {
   height: 100%;
-
   display: flex;
   flex-direction: column;
-
   margin: 0;
   padding: 0;
   background-color: #181719;
   color: white;
 }
 
+* {
+  color: white;
+}
+
 .wraper {
   padding-bottom: 100px;
+}
+
+main {
+  margin-left: 5%;
+  margin-right: 5%;
+  position: relative;
 }
 
 @media screen and (min-width: 1700px) {
@@ -26,29 +82,10 @@ body {
   }
 }
 
-* {
-/*  box-sizing: border-box; */
-  color: white;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ===== HEADER AND NAVBAR=====*/
-
-
-/* part 1 - values which are the same for every devices (mobile, tablets, desktops) */
-
+/* =====
+1. HEADER
+ =====*/
+/* 1.1 global styles */
 header {
     display: block;
     padding-left: 5%;
@@ -89,12 +126,7 @@ header::after {
 }
 
 
-
-
-
-/* part 2 - values for the phones and smaller tablets */
-
-/* classes which are declared only for the phones and smaller tablets */
+/* 1.2 classes for small devices only */
 .menu-icon {
   float: right;
   font-size: 29px;
@@ -112,17 +144,7 @@ header::after {
   cursor: pointer;
 }
 
-
-/* classes who are already declared, but needs to have different values on phones */
-
-
-.wraper-active {
- display: flex;
- justify-content: center;
- align-items: center;
- min-height: 100%;
-}
-
+/* 1.3 media queries for small devices */
 @media screen and (max-width: 700px) {
   header {
     padding-top: 19px;
@@ -137,10 +159,7 @@ header::after {
   }
 }
 
-/* part 3 - values for the bigger tablets  */
-
-/* 3.1 -  hide items which should not be displayd on tablets / pcs */
-
+/* 1.4 media queries for medium devices */
 @media screen and (min-width: 701px)  {
   header {
     padding-top: 30px;
@@ -156,9 +175,7 @@ header::after {
   }
 }
 
-/* part 4 - values for desktops */
-
-
+/* 1.5 media queries for large devices */
 @media screen and (min-width: 1201px)  {
   header {
     padding-top: 46px;
@@ -172,33 +189,11 @@ header::after {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* layout */
-main {
-  margin-left: 5%;
-  margin-right: 5%;
-  position: relative;
-}
-
 /* =====
-text part
-=====*/
+2. MAIN--TEXT
+ =====*/
 
-
+/*2.1 global classes*/
 .title {
   margin-top: 0px;
   font-weight: 500;
@@ -221,38 +216,40 @@ text part
 }
 
 
-
+/*2.1 media queries for small devices */
 @media screen and (max-width: 700px) {
   .title {
     margin-top: 10px;
-    font-size: 2.25em; /* 36 / 16 */
+    font-size: 2.25em;
   }
   .description {
-    font-size: 0.875em; //* 14 / 16 */
+    font-size: 0.875em;
   }
   .readmore {
-    font-size: 0.875em; //* 14 / 16 */
+    font-size: 0.875em;
     margin-bottom: 22px;
   }
 }
 
+/*2.3 media queries for medium devices */
 @media screen and (min-width: 701px) and (max-width: 1200px)  {
   .main--text {
     margin-bottom: 30px;
   }
   .title {
     margin-top: 15px;
-    font-size: 3em; /* 36 / 16 */
+    font-size: 3em;
   }
   .description {
-    font-size: 1.2em; //* 14 / 16 */
+    font-size: 1.2em;
   }
   .readmore {
-    font-size: 1.2em; //* 14 / 16 */
+    font-size: 1.2em;
     margin-bottom: 22px;
   }
 }
 
+/*2.4 media queries for large devices */
 @media screen and (min-width: 1201px) {
   .main--text {
     display: inline-block;
@@ -273,15 +270,11 @@ text part
 }
 
 
-
-
-
-
 /* =====
-image part
-=====*/
+3. MAIN--IMG
+ =====*/
 
-
+/* 3.1 global classes */
 .big-photo {
   max-width: 100%;
 }
@@ -293,29 +286,6 @@ image part
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: absolute;
 }
-
-@media screen and (max-width: 400px) {
-  .card {
-    right: unset;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .card {
-    max-width: 300px;
-    height: 138px;
-    bottom: -82px;
-    right: 24px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .card {
-    bottom: -102px;
-    right: 40px;
-  }
-}
-
 
 .avatar-photo, .avatar-info {
   display: inline-block;
@@ -353,7 +323,21 @@ image part
   font-weight: 700;
 }
 
+/* 3.2 media queries for extra small devices */
+@media screen and (max-width: 400px) {
+  .card {
+    right: unset;
+  }
+}
+
+/*3.3 media queries for small and medium devices */
 @media screen and (max-width: 1200px) {
+  .card {
+    max-width: 300px;
+    height: 138px;
+    bottom: -82px;
+    right: 24px;
+  }
   .name {
     font-size: 0.875em;
   }
@@ -365,35 +349,33 @@ image part
   }
 }
 
+/* 3.4 media queries for large devices */
 @media screen and (min-width: 1200px) {
   .main--img {
     width: 59%;
     margin-left: 5%;
     display: inline-block;
     position: absolute;
-    right: 0
+    right: 0;
+  }
+  .card {
+    bottom: -102px;
+    right: 40px;
   }
 }
 
 
 /* =====
-footer
-=====*/
+4. FOOTER
+ =====*/
 
 footer {
   margin-top: auto;
-
   display: block;
   width: 100%;
-
   text-align: center;
   font-size: 0.875em;
   font-style: 'Montserrat';
   font-weight: 700;
   color: #BDBDBD;
-}
-
-
-.padding-bottom-0 {
-  padding-bottom: 0 !important;
 }
