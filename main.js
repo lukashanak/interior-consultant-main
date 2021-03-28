@@ -1,51 +1,51 @@
+/* table of content:
+0. dom elements
+1. collapseMenu() function
+2. hideMenu() function
+3. event listeners
+*/
 
-let body = document.getElementById("body");
-let wraper = document.getElementById("wraper");
 
 let logo = document.getElementById("logo");
-let collapsedMenuIcon = document.getElementById("collapsedMenuIcon");
-let closeIcon = document.getElementById("closeIcon");
-
-let menuItems = document.getElementById("menuItems");
-
+let menuIcon = document.getElementById("menuIcon");
 let main = document.getElementById("main");
 let footer = document.getElementById("footer");
+let wraper = document.getElementById("wraper");
+let closeIcon = document.getElementById("closeIcon");
+let menuItems = document.getElementById("menuItems");
 
-function collapseMenu() {
-    // step 1 - hide logo and menuIcon
+function showMenu() {
+      // 1. step - hide logo and menuIcon
       logo.classList.add("element--hidden");
       menuIcon.classList.add("element--hidden");
+      // 2. step - hide page content (main and footer)
       main.classList.add("element--hidden");
       footer.classList.add("element--hidden");
-    // step 2 - add class of .height-100-percents to wraper
+      // 3. step - add class .wraper-active to the wraper
       wraper.classList.add("wraper-active");
-
-
+      // 4. step - show closeIcon and menuItems
       closeIcon.classList.remove("element--hidden");
       menuItems.classList.remove("element--hidden");
-
-      wraper.classList.add("padding-bottom-0");
 }
 
 function hideMenu() {
+  // 1. step - show logo and menuIcon
   logo.classList.remove("element--hidden");
   menuIcon.classList.remove("element--hidden");
+  // 2. step - show page content (main and footer)
   main.classList.remove("element--hidden");
   footer.classList.remove("element--hidden");
-
-  wraper.classList.remove("height-100-percents");
-  closeIcon.classList.add("element--hidden");
-
-  menuItems.classList.add("element--hidden");
-
+  // 3. step - remove class .wraper-active to the wraper
   wraper.classList.remove("wraper-active");
-wraper.classList.remove("padding-bottom-0");
+  // 4. step - hide closeIcon and menuItems
+  closeIcon.classList.add("element--hidden");
+  menuItems.classList.add("element--hidden");
 }
 
 
 menuIcon.addEventListener("click",
 function(){
-    collapseMenu();
+    showMenu();
 })
 
 closeIcon.addEventListener("click",
