@@ -64,5 +64,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- GitHub [@your-username](https://{github.com/lukashanak})
+- GitHub [@lukashanak](https://{github.com/lukashanak})
 - Twitter [@hanakl22](https://{twitter.com/hanakl22})
