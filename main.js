@@ -23,6 +23,8 @@ function collapseMenu() {
 
       closeIcon.classList.remove("element--hidden");
       menuItems.classList.remove("element--hidden");
+
+      wraper.classList.add("padding-bottom-0");
 }
 
 function hideMenu() {
@@ -37,7 +39,7 @@ function hideMenu() {
   menuItems.classList.add("element--hidden");
 
   wraper.classList.remove("wraper-active");
-
+wraper.classList.remove("padding-bottom-0");
 }
 
 

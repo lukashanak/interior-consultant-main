@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  min-height: 100%;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
@@ -101,13 +101,14 @@ header::after {
   font-size: 29px;
   cursor: pointer;
   margin-top: 3px;
+  right: 27px;
 }
 
 .close-icon {
   font-weight: lighter;
   position: absolute;
   top: 18.9px;
-  right: 29.9px;
+  right: 20px;
   font-size: 34px;
   cursor: pointer;
 }
@@ -142,27 +143,18 @@ header::after {
 /* 3.1 -  hide items which should not be displayd on tablets / pcs */
 
 @media screen and (min-width: 701px)  {
+  header {
+    padding-top: 30px;
+    margin-bottom: 50px;
+  }
   .menu-icon, .close-icon {
     display: none !important;
   }
   .list-item {
     display: inline-block;
     float: right;
-    padding-left: 50px
+    padding-left: 40px
   }
-}
-
-/* 3.2 - other things */
-
-@media screen and (min-width: 701px)  {
-  header {
-    padding-top: 30px;
-    margin-bottom: 50px;
-  }
-  .menu-items {
-
-  }
-
 }
 
 /* part 4 - values for desktops */
@@ -175,6 +167,9 @@ header::after {
   }
   .menu-icon {
     display: none !important;
+  }
+  .list-item {
+    padding-left: 80px
   }
 }
 
@@ -397,4 +392,9 @@ footer {
   font-style: 'Montserrat';
   font-weight: 700;
   color: #BDBDBD;
+}
+
+
+.padding-bottom-0 {
+  padding-bottom: 0 !important;
 }
