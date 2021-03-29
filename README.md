@@ -38,10 +38,10 @@
 
 ![screenshot](https://i.imgur.com/4LkIZOP.png)
 
-- Where can I see your demo?
-#Here: https://admiring-poitras-80b7ed.netlify.app/
+Where can I see your demo?
+- Here: https://admiring-poitras-80b7ed.netlify.app/
 - What was your experience? Frustration
-- What have you learned/improved? I don't know
+- What have you learned/improved? I think that I learned a lot of about myself
 - Your wisdom? :)
 
 ### Built With
