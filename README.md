@@ -27,7 +27,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
-  - [Built With](#built-with)
+- [Built With](#built-with)
 - [Features](#features)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
@@ -39,7 +39,7 @@
 ![screenshot](https://i.imgur.com/4LkIZOP.png)
 
 - Where can I see your demo?
-Here: https://admiring-poitras-80b7ed.netlify.app/
+#Here: https://admiring-poitras-80b7ed.netlify.app/
 - What was your experience? Frustration
 - What have you learned/improved? I don't know
 - Your wisdom? :)
