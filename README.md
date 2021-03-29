@@ -38,9 +38,8 @@
 
 ![screenshot](https://i.imgur.com/4LkIZOP.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- Where can I see your demo? Here: https://admiring-poitras-80b7ed.netlify.app/
+- Where can I see your demo?
+Here: https://admiring-poitras-80b7ed.netlify.app/
 - What was your experience? Frustration
 - What have you learned/improved? I don't know
 - Your wisdom? :)
