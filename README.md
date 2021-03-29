@@ -68,3 +68,4 @@ You can check out user stories on this page [challenge](https://devchallenges.io
 
 - GitHub [@lukashanak](https://{github.com/lukashanak})
 - Twitter [@hanakl22](https://{twitter.com/hanakl22})
+- Discord [Shamir#4318]
