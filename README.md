@@ -23,7 +23,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [What I learned](#What I learned)
+- [What I learned](#What-I-learned)
 - [Built With](#built-with)
 - [Features](#features)
 - [Contact](#contact)
@@ -34,7 +34,6 @@
 ## Overview
 
 ![screenshot](https://i.imgur.com/4LkIZOP.png)
-- This project toke me much more time than I expected.
 
 ## What I learned
 -  How tu use media queries, best web design practises (em, mobile-first etc.)
