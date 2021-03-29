@@ -9,7 +9,7 @@
 <div align="center">
   <h3>
     <a href="https://admiring-poitras-80b7ed.netlify.app/">
-      Demo
+      Live Demo
     </a>
     <span> | </span>
     <a href="https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb">
