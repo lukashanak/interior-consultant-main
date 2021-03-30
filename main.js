@@ -13,6 +13,7 @@ let footer = document.getElementById("footer");
 let wraper = document.getElementById("wraper");
 let closeIcon = document.getElementById("closeIcon");
 let menuItems = document.getElementById("menuItems");
+let body = document.getElementById("body");
 
 function showMenu() {
       // 1. step - hide logo and menuIcon
@@ -26,6 +27,8 @@ function showMenu() {
       // 4. step - show closeIcon and menuItems
       closeIcon.classList.remove("element--hidden");
       menuItems.classList.remove("element--hidden");
+      // step 5 - add overflow hidden to the body
+      body.classList.add("overflow-hidden");
 }
 
 function hideMenu() {
@@ -40,6 +43,8 @@ function hideMenu() {
   // 4. step - hide closeIcon and menuItems
   closeIcon.classList.add("element--hidden");
   menuItems.classList.add("element--hidden");
+  // step 5 - remove overflow hidden from the body
+  body.classList.remove("overflow-hidden");
 }
 
 
