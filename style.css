@@ -291,6 +291,10 @@ header::after {
   position: absolute;
 }
 
+.card-row {
+  position: relative;
+}
+
 .avatar-photo, .avatar-info {
   display: inline-block;
 }
@@ -303,9 +307,19 @@ header::after {
 
 .avatar-info {
   position: absolute;
-  top: 30px;
+  top: 10px;
   width: 150px;
 }
+
+
+/*
+.avatar-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+*/
 
 .avatar-info p {
   margin: 0px;
@@ -329,7 +343,9 @@ header::after {
 @media screen and (max-width: 440px) {
   .card {
     right: unset;
+    margin-left: 52px;
   }
+
 }
 
 /*3.3 media queries for small and medium devices */
@@ -341,13 +357,13 @@ header::after {
     right: 24px;
   }
   .name {
-    font-size: 0.875em;
-  }
-  .job-title {
     font-size: 0.75em;
   }
+  .job-title {
+    font-size: 0.65em;
+  }
   .designed-by {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 
@@ -364,6 +380,16 @@ header::after {
     bottom: -102px;
     right: 40px;
   }
+  .name {
+    font-size: 0.875em;
+  }
+  .job-title {
+    font-size: 0.75em;
+  }
+  .designed-by {
+    font-size: 1.5em;
+  }
+
 }
 
 
