@@ -312,15 +312,6 @@ header::after {
 }
 
 
-/*
-.avatar-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-*/
-
 .avatar-info p {
   margin: 0px;
   margin-bottom: 5.85px;
