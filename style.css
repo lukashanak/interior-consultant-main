@@ -224,13 +224,13 @@ header::after {
 @media screen and (max-width: 700px) {
   .title {
     margin-top: 10px;
-    font-size: 2.25em;
+    font-size: 2.25rem;
   }
   .description {
-    font-size: 0.875em;
+    font-size: 0.875rem;
   }
   .readmore {
-    font-size: 0.875em;
+    font-size: 0.875rem;
     margin-bottom: 22px;
   }
 }
@@ -242,13 +242,13 @@ header::after {
   }
   .title {
     margin-top: 15px;
-    font-size: 3em;
+    font-size: 3rem;
   }
   .description {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
   .readmore {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin-bottom: 22px;
   }
 }
@@ -266,7 +266,7 @@ header::after {
     font-size: 3em;
   }
   .description {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
   .readmore {
     font-size: 1.125em;
@@ -357,13 +357,13 @@ header::after {
     right: 24px;
   }
   .name {
-    font-size: 0.75em;
+    font-size: 0.75rem;
   }
   .job-title {
-    font-size: 0.65em;
+    font-size: 0.65rem;
   }
   .designed-by {
-    font-size: 1em;
+    font-size: 1rem;
   }
 }
 
@@ -381,13 +381,13 @@ header::after {
     right: 40px;
   }
   .name {
-    font-size: 0.875em;
+    font-size: 0.875rem;
   }
   .job-title {
-    font-size: 0.75em;
+    font-size: 0.75rem;
   }
   .designed-by {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 
 }
