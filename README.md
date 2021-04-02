@@ -66,6 +66,6 @@ You can check out user stories on this page [challenge](https://devchallenges.io
 
 ## Contact
 
-- GitHub [@lukashanak](https://{github.com/lukashanak})
-- Twitter [@hanakl22](https://{twitter.com/hanakl22})
+- Github [@lukashanak](https://github.com/lukashanak)
+- Twitter [@hanakl22](https://github.com/lukashanak)
 - Discord: Shamir#4318
